@@ -1,0 +1,51 @@
+.Timeline-item-right, .Timeline-item-left, .Timeline-item-full {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+}
+
+.Timeline-item-left {
+  align-self: flex-start;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.Timeline-item-full {
+  width: 90%;
+  align-self: center;
+}
+
+.Item-bullet-right, .Item-bullet-left, .Item-bullet-full {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1000px;
+  position: absolute;
+}
+
+.Item-bullet-left {
+  right: 0;
+  top: 0;
+}
+
+.Timeline-item-child {
+  height: 100px;
+  background: lightgrey;
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  width: 90%;
+  align-items: inherit;
+  text-align: inherit;
+}
+
+.Timeline-item-title {
+  position: absolute;
+  width: fit-content;
+  top: 0;
+}

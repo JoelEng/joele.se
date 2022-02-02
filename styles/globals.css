@@ -6,11 +6,211 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: Bogart;
+  src: local(Bogart), url(./../asset/bogart/bogart-semibold-webfont.woff2) format('woff2');
+}
+
+:root {
+  --background: #FFFBEA;
+  --text-primary: #435b79;
+  --text-secondary: #3b4252;
+  --text-highlight: #314661;
+  --accent: #add3d6;
+  --accent-1: #C7E0DE; /* These are primarily used for SVG-waves */
+  --accent-2: #DAE9E2; /* Should transition from --accent (0) to --background (5) */
+  --accent-3: #E4EEE4;
+  --accent-4: #EDF2E6;
+  --shadow-color-background: #d4d1c4;
+  --shadow-color-accent: #80a1a3;
+  --font: Bogart;
+}
+[data-theme='space'] {
+  --background: #303642;
+  --text-primary: #f5f8ff;
+  --text-secondary: #f5f8ff;
+  --text-highlight: #abaeb6;
+  --accent: #191C23;
+  --accent-1: #1F232B;
+  --accent-2: #22262F;
+  --accent-3: #252933;
+  --accent-4: #2B303B;
+  --shadow-color-background: #14161b;
+  --shadow-color-accent: #000000;
+}
+[data-theme='hacker'] {
+  --background: #202020;
+  --text-primary: #20c20e;
+  --text-secondary: #20c20e;
+  --text-highlight: #abaeb6;
+  --accent: #000000;
+  --accent-1: #080808;
+  --accent-2: #121212;
+  --accent-3: #161616;
+  --accent-4: #181818;
+  --font: 'Courier New';
+}
+[data-theme='garden'] {
+  --text-primary: #437978;
+  --text-secondary: #3b4252;
+  --text-highlight: #275554;
+  --accent: #b7d6ad;
+  --accent-1: #C9E0BD;
+  --accent-2: #D2E5C5;
+  --accent-3: #DBE9CC;
+  --accent-4: #EDF2DB;
+  --shadow-color-accent: #7f9c75;
+}
+[data-theme='purple'] {
+  --text-primary: #7b2cbf;
+  --text-secondary: #45186d;
+  --text-highlight: #5a1b91;
+  --accent: #e0aaff;
+  --accent-1: #E8BFFA;
+  --accent-2: #F0D3F5;
+  --accent-3: #F4DDF3;
+  --accent-4: #F8E7F0;
+  --shadow-color-accent: #86609c;
+}
+[data-theme='ocean'] {
+  --background: #5684D7;
+  --text-primary: #72efdd;
+  --text-secondary: #b1f1e9;
+  --text-highlight: #bbf8ef;
+  --accent: #5e60ce;
+  --accent-1: #5C69D1;
+  --accent-2: #5B6ED2;
+  --accent-3: #5A72D3;
+  --accent-4: #587BD5;
+  --shadow-color-background: #4066ac;
+  --shadow-color-accent: #32337a;
+}
+[data-theme='new-sky'] {
+  --text-primary: #435b79;
+  --text-secondary: #3b4252;
+  --text-highlight: #314661;
+  --accent: #b8ecf0;
+  --accent-1: #CAF0EF; /* These are primarily used for SVG-waves */
+  --accent-2: #D3F2EE; /* Should transition from --accent (0) to --background (5) */
+  --accent-3: #DCF4ED;
+  --accent-4: #EEF8EC;
+  --shadow-color-accent: #85b1b4;
+}
+[data-theme='new-garden'] {
+  --text-primary: #437978;
+  --text-secondary: #3b4252;
+  --text-highlight: #275554;
+  --accent: #baeec0;
+  --accent-1: #CCF2CB;
+  --accent-2: #D5F4D0;
+  --accent-3: #DDF5D5;
+  --accent-4: #EEF8E0;
+  --shadow-color-accent: #93c599;
+}
+[data-theme='new-pink'] {
+  --text-primary: #854ca7;
+  --text-secondary: #663781;
+  --text-highlight: #5a1b91;
+  --accent: #ffb7ef;
+  --accent-1: #FFC8EE;
+  --accent-2: #FFD1EE;
+  --accent-3: #FFD9ED;
+  --accent-4: #FFEAEC;
+  --shadow-color-accent: #c083b3;
+}
+[data-theme='ice'] {
+  --background: #edf2fb;
+  --text-primary: #5973b6;
+  --text-secondary: #41578d;
+  --text-highlight: #3f5385;
+  --accent: #b6ccfe;
+  --accent-1: #c1d3fe; /* These are primarily used for SVG-waves */
+  --accent-2: #ccdbfd; /* Should transition from --accent (0) to --background (5) */
+  --accent-3: #d7e3fc;
+  --accent-4: #e2eafc;
+  --shadow-color-accent: #889dcc;
+}
+[data-theme='gates'] {
+  --background: #F0BA9F;
+  --text-primary: #383fa8;
+  --text-secondary: #47291a;
+  --text-highlight: #2d338f;
+  --accent: #e78b60;
+  --accent-1: #EA9770;
+  --accent-2: #EB9D78;
+  --accent-3: #ECA380;
+  --accent-4: #EEAF90;
+  --shadow-color-accent: #a15937;
+}
+
+
+
+
+
+.Timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Timeline-item-right, .Timeline-item-left, .Timeline-item-full {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+}
+
+.Timeline-item-left {
+  align-self: flex-start;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.Timeline-item-full {
+  width: 90%;
+  align-self: center;
+}
+
+.Item-bullet-right, .Item-bullet-left, .Item-bullet-full {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1000px;
+  position: absolute;
+}
+
+.Item-bullet-left {
+  right: 0;
+  top: 0;
+}
+
+.Timeline-item-child {
+  height: 100px;
+  background: lightgrey;
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  width: 90%;
+  align-items: inherit;
+  text-align: inherit;
+}
+
+.Timeline-item-title {
+  position: absolute;
+  width: fit-content;
+  top: 0;
 }

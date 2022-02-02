@@ -1,0 +1,38 @@
+.Landing
+    background-color: var(--accent)
+    background-size: auto 100%
+    color: var(--text-primary)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-start
+    padding-top: calc(2rem + 6%)
+    height: 100vh
+    flex-wrap: wrap
+    transition: all .5s
+
+.NameAndProfile
+    display: flex
+    max-width: 95%
+    //@include assignValue(margin-top margin-bottom, calc(2rem + 4%))
+
+.TextBlock
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    font-family: var(--font)
+    z-index: 1
+
+    .Name
+        font-size: calc(2.6vw + 1.4rem)
+        margin: 0rem
+        margin-left: -22%
+
+    .Text
+        text-align: left
+        font-size: calc(1rem + 0.4vw)
+        margin-top: -14%
+        margin-left: 5%
+        max-width: 17rem
+        color: var(--text-primary)
+        transition: all .5s

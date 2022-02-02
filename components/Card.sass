@@ -1,0 +1,90 @@
+@import './variables.sass'
+
+.Card
+    width: 250px
+    max-width: 34vw
+    aspect-ratio: 1/1
+    border-radius: 12px
+    margin: calc(10px + 0.2vw)
+    flex: 0 0 auto
+    transition: all 0.3s ease-in-out
+    background-color: adjust-color($primary-color, $lightness: 16.5, $saturation: 8)
+    border: 5px solid adjust-color($primary-color, $lightness: -6, $saturation: -8)
+
+.Card:hover, .Card:active
+    box-shadow: 0 10px 20px adjust-color($primary-color, $lightness: -14, $saturation: -16)
+    transform: scale(1.1)
+
+.Card-contents
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+
+.Card-hover-enter
+    opacity: 0
+
+.Card-hover-enter-active
+    opacity: 1
+    transition: opacity 300ms
+
+.Card-hover-exit
+    opacity: 1
+
+.Card-hover-exit-active
+    opacity: 0
+    transition: opacity 300ms
+
+.Rating-box
+    background-color: adjust-color($primary-color, $lightness: -6, $saturation: -8) 
+    color: $text-color
+    font-weight: 900
+    padding: 8px
+    padding-top: 0px
+    padding-bottom: 0px
+    position: absolute
+    bottom: -1px
+    right: -1px
+    align-self: flex-end
+    border-top-left-radius: 10px
+    display: flex
+    flex-direction: row
+
+.Rating
+    font-weight: 900
+    margin: 0px
+    margin-left: 4px
+    margin-right: 0px
+    display: flex
+    align-items: center
+
+.Rating10
+    font-weight: 400
+    margin-right: 0px
+    font-size: 13px
+    display: flex
+    align-items: center
+    color: adjust-color($text-color, $lightness: 15, $saturation: -10)
+
+.Card-overlay
+    background-color: adjust-color($primary-color, $lightness: 16.5, $saturation: 8)
+    width: 100%
+    height: 100%
+    position: absolute
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+
+.Overlay-title
+    margin: 20px
+    font-size: 30px
+    font-family: var(--font)
+    color: $text-color
+
+.Description
+    margin: 10px
+    margin-top: -10px
+    font-size: 20px
+    font-weight: 100px
+    color: adjust-color($text-color, $lightness: 20, $saturation: -10)
