@@ -10,12 +10,11 @@ import { CSSLogo, GitLogo, SVGWavesTop, SVGWavesBottom, JavaLogo, RustLogo, Hask
 
 export default function Home() {
   let defaultDark
-  let theme
-  let setTheme
-  if (typeof window !== "undefined") {
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'space' : 'sky');
+
+  useEffect(() => {
     defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'space' : 'sky');
-  }
+  })
 
   const chevronDest = useRef(null)
   const scrollThere = ref => ref.current.scrollIntoView()
