@@ -23,7 +23,7 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.App} data-theme={theme} >
+    theme && <div className={styles.App} data-theme={theme} >
       <ColorSwitch setTheme={setTheme} />
       
       <Landing chevronDest={() => scrollThere(chevronDest)} />
@@ -90,13 +90,15 @@ export default function Home() {
 }
 
 function useStickyState(defaultValue, key) {
-  const [value, setValue] = useState(defaultValue);
+  const [value, setValue] = useState("");
 
   useEffect(() => {
     const stickyValue = window.localStorage.getItem(key);
 
-    if (stickyValue !== null) {
+    if (stickyValue) {
       setValue(stickyValue);
+    } else {
+      setValue(defaultValue)
     }
   }, [key]);
 
