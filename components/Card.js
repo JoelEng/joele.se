@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import './Card.sass'
+import Image from 'next/image'
 import { CSSTransition } from 'react-transition-group';
+import './Card.sass'
 
 export default function Card(props) {
     const [hover, setHover] = useState(false);
@@ -16,7 +17,7 @@ export default function Card(props) {
                 <CardOverlay {...props} />
             </CSSTransition>
             <div className="Card-contents">
-                <img src={props.imgSrc} alt={props.title} width={props.imgWidth} />
+                <Image src={props.imgSrc} alt={props.title} width={props.imgWidth} />
             </div>
         </div>
     )
