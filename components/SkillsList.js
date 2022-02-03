@@ -2,14 +2,11 @@ import styles from "./../styles/SkillsList.module.sass";
 
 export default function SkillsList(props) {
   return (
-    <>
-      <div className={styles.SkillsList}>
-        {props.children.map((child) => (
-          <SkillItem {...child.props} key={child.id} /> //Iterate over children, making each a SkillItem
-        ))}
-      </div>
-    </>
-    
+    <div className={styles.SkillsList}>
+      {props.children.map((child) => (
+        <SkillItem {...child.props} key={child.id} /> //Iterate over children, making each a SkillItem
+      ))}
+    </div>
   );
 }
 

@@ -1,5 +1,4 @@
-import { useEffect, useRef } from 'react'
-import useLocalStorage from 'use-local-storage'
+import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Home.module.sass'
 import ColorSwitch from './../components/Landing/ColorSwitch'
 import Landing from './../components/Landing/Landing'
@@ -9,13 +8,10 @@ import SkillsList from "./../components/SkillsList"
 import { CSSLogo, GitLogo, SVGWavesTop, SVGWavesBottom, JavaLogo, RustLogo, HaskellLogo, ReactLogo, JavaScriptLogo, HTMLLogo } from "./../components/SVGs"
 
 export default function Home() {
-  let defaultDark
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'space' : 'sky');
+  const [theme, setTheme] = useStickyState("sky", "theme")
 
-  useEffect(() => {
-    defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  })
-
+  //let defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
   const chevronDest = useRef(null)
   const scrollThere = ref => ref.current.scrollIntoView()
 
@@ -91,6 +87,24 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+function useStickyState(defaultValue, key) {
+  const [value, setValue] = useState(defaultValue);
+
+  useEffect(() => {
+    const stickyValue = window.localStorage.getItem(key);
+
+    if (stickyValue !== null) {
+      setValue(stickyValue);
+    }
+  }, [key]);
+
+  useEffect(() => {
+    window.localStorage.setItem(key, value);
+  }, [key, value]);
+
+  return [value, setValue];
 }
 
 const ArrowUp = (

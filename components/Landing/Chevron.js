@@ -1,10 +1,9 @@
 import styles from './../../styles/Chevron.module.sass'
 
 export default function Chevron(props) {
-  console.log(props.chevronDest)
   return (
     <div className={styles.ChevronContainer}>
-      <ChevronDown onClick={props.chevronDest} style={{ cursor: "pointer" }} />
+      <ChevronDown className={styles.Chevron} onClick={props.chevronDest}/>
     </div>
   )
 }
