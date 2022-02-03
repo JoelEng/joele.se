@@ -2,7 +2,7 @@ import styles from "./../../styles/SkillsList.module.sass";
 
 export default function SkillsList(props) {
   return (
-    <div className={styles.SkillsList}>
+    <div className={styles.List}>
       {props.children.map((child) => (
         <SkillItem {...child.props} key={child.id} /> //Iterate over children, making each a SkillItem
       ))}
@@ -12,11 +12,9 @@ export default function SkillsList(props) {
 
 function SkillItem(props) {
   return (
-    <div className={styles.SkillItem} >
-      <p className={styles.SkillItemText} style={{ textAlign: "justify", lineHeight: "1.4" }}>
-        {props.src}
-        <span className={styles.SkillTitle}>{props.alt}</span> - {props.children}
-      </p>
+    <div className={styles.Item}>
+      {props.src}
+      <span className={styles.Title}>{props.alt}</span> - {props.children}
     </div>
   );
 }

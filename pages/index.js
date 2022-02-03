@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Home.module.sass'
 import ColorSwitch from './../components/Landing/ColorSwitch'
@@ -22,6 +23,9 @@ export default function Home() {
 
   return (
     theme && <div className={styles.App} data-theme={theme} >
+      <Head>
+        <title>Joel</title>
+      </Head>
       <ColorSwitch setTheme={setTheme} />
       
       <Landing chevronDest={() => scrollThere(chevronDest)} />
