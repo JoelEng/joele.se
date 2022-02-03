@@ -5,7 +5,7 @@ export default function Segment(props) {
   function children() {
     return props.children.map( child => {
       return (
-        <Card {...child.props}>
+        <Card {...child.props} key={child.id}>
           {child}
         </Card>
       )

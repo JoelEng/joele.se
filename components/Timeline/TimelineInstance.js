@@ -10,7 +10,7 @@ export default function TimelineInstance() {
       </Timeline.Right>
       <Timeline.Left icon={SchoolIcon} title={title("2019 - current (2024)")} className={styles.TimelineItemContent + " " + styles.TimelineItemImportant} >
         <h1 className={styles.TimelineItemTitleTest} >MSc in Computer Science, Lund University</h1>
-        <p className={styles.TimelineBody}>This is the rest of the stuff, but it's much longer than the other rest of the stuff</p>
+        <p className={styles.TimelineBody}>This is the rest of the stuff, but it&apos;s much longer than the other rest of the stuff</p>
       </Timeline.Left>
       <Timeline.Right icon={PostnordIcon} title={title("Summer 2018 & 2019")} >
         <h1 className={styles.TimelineItemTitleTest} >Mailman, Postnord</h1>
