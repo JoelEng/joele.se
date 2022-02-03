@@ -1,4 +1,4 @@
-import styles from "./../styles/SkillsList.module.sass";
+import styles from "./../../styles/SkillsList.module.sass";
 
 export default function SkillsList(props) {
   return (
