@@ -14,7 +14,9 @@ function SkillItem(props) {
   return (
     <div className={styles.Item}>
       {props.src}
-      <span className={styles.Title}>{props.alt}</span> - {props.children}
+      <p className={styles.Text}>
+        <span className={styles.Title}>{props.alt}</span> - {props.children}
+      </p>
     </div>
   );
 }

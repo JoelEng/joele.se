@@ -16,11 +16,11 @@ export default function ColorSwitch({ setTheme }) {
           {ColorButton("garden", "#b7d6ad", "#437978", setTheme)}
           {ColorButton("space", "#191C23", "#f5f8ff", setTheme)}
           {/*ColorButton("hacker", "#191C23", "#20c20e", setTheme)*/}
-          {ColorButton("purple", "#e0aaff", "#7b2cbf", setTheme)}
+          {/*ColorButton("purple", "#e0aaff", "#7b2cbf", setTheme)*/}
+          {ColorButton("new-pink", "#ffb7ef", "#854ca7", setTheme)}
           {ColorButton("ocean", "#5e60ce", "#72efdd", setTheme)}
           {/*ColorButton("new-sky", "#b8ecf0", "#435b79", setTheme)*/}
           {/*ColorButton("new-garden", "#baeec0", "#437978", setTheme)*/}
-          {/*ColorButton("new-pink", "#ffb7ef", "#854ca7", setTheme)*/}
           {/*ColorButton("ice", "#b6ccfe", "#5973b6", setTheme)*/}
           {/*ColorButton("gates", "#e78b60", "#383fa8", setTheme)*/}
         </div>

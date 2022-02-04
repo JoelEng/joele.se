@@ -117,9 +117,9 @@ a {
   --shadow-color-accent: #93c599;
 }
 [data-theme='new-pink'] {
-  --text-primary: #854ca7;
-  --text-secondary: #663781;
-  --text-highlight: #5a1b91;
+  --text-primary: #a74ca7;
+  --text-secondary: #642964;
+  --text-highlight: #8f3b8f;
   --accent: #ffb7ef;
   --accent-1: #FFC8EE;
   --accent-2: #FFD1EE;

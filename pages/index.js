@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className={styles.Content} ref={chevronDest}>
 
-        <p className={styles.Title} style={{ marginBottom: "20px" }}>School &amp; Work Experience</p>
+        <p className={styles.Title}>School &amp; Work Experience</p>
         <TimelineInstance/>
 
         <p className={styles.Title}>My Skills</p>
