@@ -10,7 +10,7 @@
 
 .LayerButtonForeground
   position: relative
-  background: var(--background)
+  background: none
   color: var(--text-primary)
   font-family: var(--font)
   font-size: 1rem
@@ -19,12 +19,17 @@
   border-radius: inherit
   z-index: 10
   transition: inherit
+  border: 3px solid var(--text-primary)
+  *
+    transition: inherit
+    padding: 0
+    margin: 0
 
 .LayerButtonBackground
   position: absolute
   left: 0
   top: 0
-  background: var(--text-primary)
+  background: var(--background)
   width: 100%
   height: 100%
   border-radius: inherit
@@ -32,8 +37,11 @@
   transition: inherit
 
 .LayerButton:not(:hover)
-  $offset: 2.4px
+  $offset: 3px
   .LayerButtonForeground
     transform: translate(-$offset, -$offset)
+    *
+      transform: translate($offset, $offset)
+
   .LayerButtonBackground
     transform: translate($offset, $offset)

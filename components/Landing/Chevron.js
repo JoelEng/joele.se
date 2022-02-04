@@ -16,6 +16,6 @@ export default function Chevron(props) {
 
 const ChevronDown = props => (
   <svg {...props} width="calc(4vw + 60px)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.4" d="M19 9l-7 7-7-7" />
   </svg>
 )
