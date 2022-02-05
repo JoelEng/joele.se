@@ -3,7 +3,7 @@ import styles from './../../styles/TimelineInstance.module.sass'
 
 export default function TimelineInstance() {
   return (
-    <Timeline lineColor="var(--text-primary)" lineStyle="dashed" lineWidth={8} className={styles.TimelineItemContent}>
+    <Timeline lineColor="var(--text)" lineStyle="dashed" lineWidth={8} className={styles.TimelineItemContent}>
       <Timeline.Right icon={WeKnowITIcon} title={title("2021 - current")} className={styles.TimelineItemContent + " " + styles.TimelineItemImportant} >
         <h1 className={styles.TimelineItemTitleTest} >Developer, We Know IT</h1>
         <p className={styles.TimelineBody}>As developer at a consulting company my work has consisted of various smaller tasks along with some larger projects, all of which have broadened my understanding of React and Wordpress. I have, for the first time, programmed in a work environment utilizing agile development. My time with frontend development at WeKnowIT has complemented my previous proficiency in backend development.</p>
