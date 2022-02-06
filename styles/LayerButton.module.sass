@@ -19,19 +19,3 @@
   height: 100%
   border-radius: inherit
   transition: inherit
-
-.LayerButtonForeground
-  box-sizing: border-box
-  background: none
-  color: var(--text)
-  border: 3px solid var(--text)
-  
-.LayerButtonBackground
-  background: var(--background)
-
-.LayerButton:not(:hover)
-  $offset: 3px
-  .LayerButtonForeground
-    transform: translate(-$offset, -$offset)
-  .LayerButtonBackground
-    transform: translate($offset, $offset)

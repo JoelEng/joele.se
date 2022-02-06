@@ -15,7 +15,7 @@ export default function Chevron(props) {
           <Mail className={styles.SmallButton} />
         </a>
       </div>
-      <LayerButton href="CV.pdf" download className={styles.LayerButton}>
+      <LayerButton href="CV.pdf" offset="3px" download className={styles.LayerButton}>
         Download Resume
       </LayerButton>
       <ChevronDown className={styles.Chevron} onClick={props.chevronDest}/>

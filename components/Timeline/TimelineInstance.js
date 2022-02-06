@@ -10,7 +10,7 @@ export default function TimelineInstance() {
         <p className={styles.TimelineBody}>As developer at a consulting company my work has consisted of various smaller tasks along with some larger projects, all of which have broadened my understanding of React and Wordpress. I have, for the first time, programmed in a work environment utilizing agile development. My time with frontend development at WeKnowIT has complemented my previous proficiency in backend development.</p>
       </Timeline.Right>
       <Timeline.Left icon={SchoolIcon} title={title("2019 - current (2024)")} style={{ background: "none" }} >
-        <LayerButton style={{ position: "relative", padding: "0" }} borderRadius="20px" background="var(--primary-3)" pointerEvents="none">
+        <LayerButton style={{ position: "relative", padding: "0" }} offset="5px" borderRadius="20px" background="var(--primary-2)" pointerEvents="none">
         <h1 className={styles.TimelineItemTitleTest} >MSc in Computer Science, Lund University</h1>
         <p className={styles.TimelineBody}>This is the rest of the stuff, but it&apos;s much longer than the other rest of the stuff</p>
         </LayerButton>
