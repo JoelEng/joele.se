@@ -1,3 +1,4 @@
+import FadeInSection from "../FadeIn";
 import styles from "./../../styles/SkillsList.module.sass";
 
 export default function SkillsList(props) {
@@ -12,11 +13,13 @@ export default function SkillsList(props) {
 
 function SkillItem(props) {
   return (
-    <div className={styles.Item}>
-      {props.src}
-      <p className={styles.Text}>
-        <span className={styles.Title}>{props.alt}</span> - {props.children}
-      </p>
-    </div>
+    <FadeInSection>
+      <div className={styles.Item}>
+        {props.src}
+        <p className={styles.Text}>
+          <span className={styles.Title}>{props.alt}</span> - {props.children}
+        </p>
+      </div>
+    </FadeInSection>
   );
 }

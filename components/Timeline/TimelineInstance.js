@@ -1,32 +1,57 @@
 import Timeline from './package/index'
 import styles from './../../styles/TimelineInstance.module.sass'
 import LayerButton from './../LayerButton'
+import FadeInSection from '../FadeIn'
+import styled from 'styled-components'
+
+const InnerDiv = styled.div`
+  background: var(--primary-4);
+  border-radius: 20px;
+  overflow: auto;
+`
 
 export default function TimelineInstance() {
   return (
     <Timeline lineColor="var(--text)" lineStyle="dashed" lineWidth={8} className={styles.TimelineItemContent}>
-      <Timeline.Right icon={WeKnowITIcon} title={title("2021 - current")} className={styles.TimelineItemContent + " " + styles.TimelineItemImportant} >
-        <h1 className={styles.TimelineItemTitleTest} >Developer, We Know IT</h1>
-        <p className={styles.TimelineBody}>As developer at a consulting company my work has consisted of various smaller tasks along with some larger projects, all of which have broadened my understanding of React and Wordpress. I have, for the first time, programmed in a work environment utilizing agile development. My time with frontend development at WeKnowIT has complemented my previous proficiency in backend development.</p>
+      <Timeline.Right icon={WeKnowITIcon} title={title("2021 - current")} >
+        <FadeInSection>
+          <InnerDiv>
+            <h1 className={styles.TimelineItemTitleTest} >Developer, We Know IT</h1>
+            <p className={styles.TimelineBody}>As developer at a consulting company my work has consisted of various smaller tasks along with some larger projects, all of which have broadened my understanding of React and Wordpress. I have, for the first time, programmed in a work environment utilizing agile development. My time with frontend development at WeKnowIT has complemented my previous proficiency in backend development.</p>
+          </InnerDiv>
+        </FadeInSection>
       </Timeline.Right>
       <Timeline.Left icon={SchoolIcon} title={title("2019 - current (2024)")} style={{ background: "none" }} >
-        <LayerButton style={{ position: "relative", padding: "0" }} offset="5px" borderRadius="20px" background="var(--primary-2)" pointerEvents="none">
-        <h1 className={styles.TimelineItemTitleTest} >MSc in Computer Science, Lund University</h1>
-        <p className={styles.TimelineBody}>This is the rest of the stuff, but it&apos;s much longer than the other rest of the stuff</p>
-        </LayerButton>
+        <FadeInSection>
+          <LayerButton style={{ position: "relative", padding: "0" }} offset="5px" borderRadius="20px" background="var(--primary-2)" pointerEvents="none">
+          <h1 className={styles.TimelineItemTitleTest} >MSc in Computer Science, Lund University</h1>
+          <p className={styles.TimelineBody}>This is the rest of the stuff, but it&apos;s much longer than the other rest of the stuff</p>
+          </LayerButton>
+        </FadeInSection>
       </Timeline.Left>
       <Timeline.Right icon={PostnordIcon} title={title("Summer 2018 & 2019")} >
-        <h1 className={styles.TimelineItemTitleTest} >Mailman, Postnord</h1>
-        <p className={styles.TimelineBody}>This is the rest of the stuff</p>
+        <FadeInSection>
+          <InnerDiv>
+            <h1 className={styles.TimelineItemTitleTest} >Mailman, Postnord</h1>
+            <p className={styles.TimelineBody}>This is the rest of the stuff</p>
+          </InnerDiv>
+        </FadeInSection>
       </Timeline.Right>
       <Timeline.Right icon={SVTIcon} title={title("2017 - 2019")} >
-        <h1 className={styles.TimelineItemTitleTest} >Transcriber, Sveriges Television</h1>
-        <p className={styles.TimelineBody}>I worked for the swedish national television show “Född 2010” (Born 2010). This was an excellent opportunity to gain real work experience and to discipline myself to do things on time and in a satisfactory manner. I kept myself busy with work and school, yet managed to plan well and allocate time for both.</p>
+        <FadeInSection>
+          <InnerDiv>
+            <h1 className={styles.TimelineItemTitleTest} >Transcriber, Sveriges Television</h1>
+            <p className={styles.TimelineBody}>I worked for the swedish national television show “Född 2010” (Born 2010). This was an excellent opportunity to gain real work experience and to discipline myself to do things on time and in a satisfactory manner. I kept myself busy with work and school, yet managed to plan well and allocate time for both.</p>
+          </InnerDiv>
+        </FadeInSection>
       </Timeline.Right>
-      
       <Timeline.Left icon={SchoolIcon} title={title("2016 - 2019")} >
-        <h1 className={styles.TimelineItemTitleTest} >Natural Science Program, Nacka Gymnasium</h1>
-        <p className={styles.TimelineBody}>This is the rest of the stuff</p>
+        <FadeInSection>
+          <InnerDiv>
+            <h1 className={styles.TimelineItemTitleTest} >Natural Science Program, Nacka Gymnasium</h1>
+            <p className={styles.TimelineBody}>This is the rest of the stuff</p>
+          </InnerDiv>
+        </FadeInSection>
       </Timeline.Left>
     </Timeline>
   )
