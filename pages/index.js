@@ -6,6 +6,7 @@ import Landing from './../components/Landing/Landing'
 import TimelineInstance from "./../components/Timeline/TimelineInstance"
 import { SVGWavesTop, SVGWavesBottom } from "./../components/SVGs"
 import SkillsListInstance from '../components/SkillsList/SkillsListInstance'
+//import Projects from '../components/Projects'
 
 export default function Home() {
   const [theme, setTheme] = useStickyState("sky", "theme")
@@ -35,6 +36,11 @@ export default function Home() {
 
         <p className={styles.Title}>School &amp; Work Experience</p>
         <TimelineInstance/>
+
+        {/*
+        <p className={styles.Title}>Projects</p>
+        <Projects/>
+        */}
 
         <p className={styles.Title}>My Skills</p>
         <SkillsListInstance/>

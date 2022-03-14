@@ -2,7 +2,7 @@ import { useState } from "react"
 import styles from "../../styles/ColorSwitch.module.sass"
 
 export default function ColorSwitch({ setTheme }) {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
   function handleClick() {
     setIsVisible(!isVisible)
   }
