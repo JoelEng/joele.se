@@ -27,19 +27,16 @@ const SkillsListInstance = () => (
       This website uses React!
     </div>
     <div src={JavaScriptLogo} alt="JavaScript">
-      In publishing and graphic design, Lorem ipsum is a
-      placeholder text demonstrate the visual form of a...
-      This website uses JavaScript!
+      With my experience in the largely similiar Java, paired with all the time spent during work-hours,
+      JavaScript is likely one of the languages I have become best at.
     </div>
     <div src={HTMLLogo} alt="HTML">
-      In publishing and graphic design, Lorem ipsum is a
-      placeholder text demonstrate the visual form of a...
-      This website uses HTML!
+      When designing a website, I often spend a long time thinking about the logic of the HTML
+      and how to make it great in the simplest way possible.
     </div>
     <div src={CSSLogo} alt="CSS">
-      In publishing and graphic design, Lorem ipsum is a
-      placeholder text demonstrate the visual form of a...
-      This website uses CSS!
+      I love tinkering in CSS to get a website to look just perfect. I am well-versed in many different
+      implementations of CSS, such as Sass and Styled Components. 
     </div>
   </SkillsList>
 )
