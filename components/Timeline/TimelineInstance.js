@@ -13,43 +13,90 @@ const InnerDiv = styled.div`
 export default function TimelineInstance() {
   return (
     <Timeline lineColor="var(--text)" lineStyle="dashed" lineWidth={8} className={styles.TimelineItemContent}>
+      {/*
+      <Timeline.Right icon={AftonbladetIcon} title={title("Summer 2022")} >
+        <FadeInSection>
+          <InnerDiv>
+            <h1 className={styles.TimelineItemTitleTest}>
+              Developer, Aftonbladet
+            </h1>
+            <p className={styles.TimelineBody}>
+              I will be working as a Frontend Developer at Aftonbladet.
+            </p>
+          </InnerDiv>
+        </FadeInSection>
+      </Timeline.Right>
+      */}
       <Timeline.Right icon={WeKnowITIcon} title={title("2021 - current")} >
         <FadeInSection>
           <InnerDiv>
-            <h1 className={styles.TimelineItemTitleTest} >Developer, We Know IT</h1>
-            <p className={styles.TimelineBody}>As developer at a consulting company my work has consisted of various smaller tasks along with some larger projects, all of which have broadened my understanding of React and Wordpress. I have, for the first time, programmed in a work environment utilizing agile development. My time with frontend development at WeKnowIT has complemented my previous proficiency in backend development.</p>
+            <h1 className={styles.TimelineItemTitleTest}>
+              Developer, We Know IT
+            </h1>
+            <p className={styles.TimelineBody}>
+              As developer at a consulting company my work has consisted of various smaller tasks
+              along with some larger projects, all of which have broadened my understanding of React and Wordpress.
+              I have, for the first time, programmed in a work environment utilizing agile development.
+              My time with frontend development at WeKnowIT has complemented my previous
+              proficiency in backend development.
+            </p>
           </InnerDiv>
         </FadeInSection>
       </Timeline.Right>
       <Timeline.Left icon={SchoolIcon} title={title("2019 - current (2024)")} style={{ background: "none" }} >
         <FadeInSection>
           <LayerButton style={{ position: "relative", padding: "0" }} offset="5px" borderRadius="20px" background="var(--primary-2)" pointerEvents="none">
-          <h1 className={styles.TimelineItemTitleTest} >MSc in Computer Science, Lund University</h1>
-          <p className={styles.TimelineBody}>This is the rest of the stuff, but it&apos;s much longer than the other rest of the stuff</p>
+            <h1 className={styles.TimelineItemTitleTest}>
+              MSc in Computer Science, Lund University
+            </h1>
+            <p className={styles.TimelineBody}>
+              I am currently in my third year out of a total of five, pursuing a degree in Computer Science.
+              As part of my broad education, I have learned everything from functional programming with Haskell
+              and multithreading with Java, to advanced mathematics and creating a computer. 
+            </p>
           </LayerButton>
         </FadeInSection>
       </Timeline.Left>
       <Timeline.Right icon={PostnordIcon} title={title("Summer 2018 & 2019")} >
         <FadeInSection>
           <InnerDiv>
-            <h1 className={styles.TimelineItemTitleTest} >Mailman, Postnord</h1>
-            <p className={styles.TimelineBody}>This is the rest of the stuff</p>
+            <h1 className={styles.TimelineItemTitleTest}>
+              Mailman, Postnord
+            </h1>
+            <p className={styles.TimelineBody}>
+              I spent the summer working close to my best friends,
+              waking with the early-morning sunrise at 5 am,
+              and getting some serious leg workouts running up and down the humid stairways of
+              downtown Stockholm.
+            </p>
           </InnerDiv>
         </FadeInSection>
       </Timeline.Right>
       <Timeline.Right icon={SVTIcon} title={title("2017 - 2019")} >
         <FadeInSection>
           <InnerDiv>
-            <h1 className={styles.TimelineItemTitleTest} >Transcriber, Sveriges Television</h1>
-            <p className={styles.TimelineBody}>I worked for the swedish national television show “Född 2010” (Born 2010). This was an excellent opportunity to gain real work experience and to discipline myself to do things on time and in a satisfactory manner. I kept myself busy with work and school, yet managed to plan well and allocate time for both.</p>
+            <h1 className={styles.TimelineItemTitleTest}>
+              Transcriber, Sveriges Television
+            </h1>
+            <p className={styles.TimelineBody}>
+              I worked for the swedish national television show “Född 2010” (Born 2010).
+              This was an excellent opportunity to gain real work experience and to discipline myself
+              to do things on time and in a satisfactory manner. I kept myself busy with work and school,
+              yet managed to plan well and allocate time for both.
+            </p>
           </InnerDiv>
         </FadeInSection>
       </Timeline.Right>
       <Timeline.Left icon={SchoolIcon} title={title("2016 - 2019")} >
         <FadeInSection>
           <InnerDiv>
-            <h1 className={styles.TimelineItemTitleTest} >Natural Science Program, Nacka Gymnasium</h1>
-            <p className={styles.TimelineBody}>This is the rest of the stuff</p>
+            <h1 className={styles.TimelineItemTitleTest}>
+              Natural Science Program, Nacka Gymnasium
+            </h1>
+            <p className={styles.TimelineBody}>
+              A small course in Java became my first real introduction to programming.
+              Other than that, I had a real interest in Swedish and English.
+            </p>
           </InnerDiv>
         </FadeInSection>
       </Timeline.Left>
@@ -84,5 +131,11 @@ const PostnordIcon = (
 const SVTIcon = (
   <svg fill="none" viewBox="0 0 24 24" stroke="var(--background)" style={{ margin: "20%", marginTop: "19%" }}>
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+  </svg>
+)
+
+const AftonbladetIcon = (
+  <svg fill="none" viewBox="0 0 24 24" stroke="var(--background)" strokeWidth={2} style={{ margin: "20%", marginTop: "19%" }}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
   </svg>
 )

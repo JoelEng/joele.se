@@ -13,18 +13,17 @@ const SkillsListInstance = () => (
       programming to large projects.
     </div>
     <div src={RustLogo} alt="Rust">
-      In publishing and graphic design, Lorem ipsum is a
-      placeholder text demonstrate the visual form of a dasdlkjabs
-      dlkjabslkd jbaslkdj balksd laskjbd kajsdb aksj
+      Although never a part of my education or work, I have learned Rust during my free-time,
+      for example using it to complete a large part of Advent of Code 2021.
     </div>
     <div src={HaskellLogo} alt="Haskell">
-      In publishing and graphic design, Lorem ipsum is a
-      placeholder text demonstrate the visual form of a dasdlkjabs
-      dlkjabslkd jbaslkdj balksd laskjbd kajsdb aksj
+      In my opinion the most enjoyable language to write, and the most beautiful.
+      The course that introduced me to it is my all time favourite so far,
+      and I have a deep love for the language itself.
     </div>
     <div src={ReactLogo} alt="React">
-      In publishing and graphic design, Lorem ipsum is a
-      placeholder text demonstrate the visual form of a...
+      I learned React when applying to my first frontend job and have used it more than a lot since then,
+      for everything big and small.
       This website uses React!
     </div>
     <div src={JavaScriptLogo} alt="JavaScript">
