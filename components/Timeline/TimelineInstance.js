@@ -13,7 +13,6 @@ const InnerDiv = styled.div`
 export default function TimelineInstance() {
   return (
     <Timeline lineColor="var(--text)" lineStyle="dashed" lineWidth={8} className={styles.TimelineItemContent}>
-      {/*
       <Timeline.Right icon={AftonbladetIcon} title={title("Summer 2022")} >
         <FadeInSection>
           <InnerDiv>
@@ -26,8 +25,7 @@ export default function TimelineInstance() {
           </InnerDiv>
         </FadeInSection>
       </Timeline.Right>
-      */}
-      <Timeline.Right icon={WeKnowITIcon} title={title("2021 - current")} >
+      <Timeline.Right icon={WeKnowITIcon} title={title("2021 - 2022")} >
         <FadeInSection>
           <InnerDiv>
             <h1 className={styles.TimelineItemTitleTest}>
@@ -45,7 +43,7 @@ export default function TimelineInstance() {
       </Timeline.Right>
       <Timeline.Left icon={SchoolIcon} title={title("2019 - current (2024)")} style={{ background: "none" }} >
         <FadeInSection>
-          <LayerButton style={{ position: "relative", padding: "0" }} offset="5px" borderRadius="20px" background="var(--primary-2)" pointerEvents="none">
+          <LayerButton style={{ position: "relative", padding: "0" }} offset="5px" borderRadius="20px" background="var(--primary-4)" pointerEvents="none">
             <h1 className={styles.TimelineItemTitleTest}>
               MSc in Computer Science, Lund University
             </h1>

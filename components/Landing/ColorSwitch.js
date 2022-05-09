@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styles from "../../styles/ColorSwitch.module.sass"
+import LayerButton from "../LayerButton"
 
 export default function ColorSwitch({ setTheme }) {
   const [isVisible, setIsVisible] = useState(true)
@@ -11,7 +12,7 @@ export default function ColorSwitch({ setTheme }) {
     <>
       {PaletteButton(handleClick)}
       <div className={styles.ColorSwitchOverlay} onClick={handleClick} style={{ opacity: !isVisible ? "0" : "1", visibility: isVisible ? "visible" : "hidden" }}>
-        <div className={styles.ColorSwitchPopup} onClick={(e) => e.stopPropagation()}>
+        <LayerButton borderRadius=".5rem" offset="4px" background="var(--primary-4)" outerStyle={{position: "fixed", right: "0", margin: "1rem"}} className={styles.ColorSwitchPopup} onClick={(e) => e.stopPropagation()}>
           {ColorButton("sky", "#add3d6", "#435b79", setTheme)}
           {ColorButton("garden", "#b7d6ad", "#437978", setTheme)}
           {ColorButton("space", "#191C23", "#f5f8ff", setTheme)}
@@ -23,7 +24,7 @@ export default function ColorSwitch({ setTheme }) {
           {/*ColorButton("new-garden", "#baeec0", "#437978", setTheme)*/}
           {/*ColorButton("ice", "#b6ccfe", "#5973b6", setTheme)*/}
           {/*ColorButton("gates", "#e78b60", "#383fa8", setTheme)*/}
-        </div>
+        </LayerButton>
       </div>
     </>
   )

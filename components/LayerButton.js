@@ -23,8 +23,8 @@ const OffsetButton = styled.a`
   }
 `
 
-const LayerButton = ({children, background, fontFamily, ...props}) => (
-  <OffsetButton href={props.href} offset={props.offset} download={props.download} className={styles.LayerButton} style={{ borderRadius: props.borderRadius, pointerEvents: props.pointerEvents }} >
+const LayerButton = ({children, background, fontFamily, outerStyle, ...props}) => (
+  <OffsetButton href={props.href} offset={props.offset} download={props.download} className={styles.LayerButton} style={{ borderRadius: props.borderRadius, pointerEvents: props.pointerEvents, ...outerStyle }} >
     <LayerButtonBackground className={styles.LayerButtonBackground} style={{ background: background }} />
     <LayerButtonForeground className={styles.LayerButtonForeground}/>
     <div className={styles.ButtonChild} {...props} >
