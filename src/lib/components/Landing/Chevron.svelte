@@ -28,7 +28,7 @@
 			<h1>View My Resume</h1>
 		</LayerButton>
 	</a>
-	<div on:click={() => scrollTo('content', -20)}>
+	<div on:click={() => scrollTo('content', -32)}>
 		<Chevron />
 	</div>
 </div>
