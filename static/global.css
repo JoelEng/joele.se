@@ -1,0 +1,125 @@
+:root {
+	--font: Bogart;
+	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+
+	--background: #fffbea;
+	--text: #437978;
+	--text-body: #3b4252;
+	--text-highlight: #275554;
+	--primary: #b7d6ad;
+	/* --primary: #e1e289; */
+	--primary-1: #c9e0bd;
+	--primary-2: #d2e5c5;
+	--primary-3: #dbe9cc;
+	--primary-4: #edf2db;
+	--accent: var(--text);
+	--card: var(--primary-4);
+}
+
+[data-theme='sky'] {
+	--background: #fffbea;
+	--text: #435b79;
+	--text-body: #3b4252;
+	--text-highlight: #314661;
+	--primary: #add3d6;
+	--primary-1: #c7e0de; /* These are primarily used for SVG-waves */
+	--primary-2: #dae9e2; /* Should transition from --primary (0) to --background (5) */
+	--primary-3: #e4eee4;
+	--primary-4: #edf2e6;
+	--accent: var(--text); /* Needs to contrast well against --primary */
+	--card: var(--primary-4);
+}
+
+[data-theme='bees'] {
+	--background: #fffbea;
+	--text: #2f3f45;
+	--text-body: #302913;
+	--text-highlight: white;
+	--primary: #fed766;
+	--primary-1: #ffe087;
+	--primary-2: #ffe9a8;
+	--primary-3: #ffeeb9;
+	--primary-4: #fff2c9;
+	--accent: var(--text);
+	--card: var(--primary-4);
+}
+
+[data-theme='space'] {
+	--background: #303642;
+	--text: #f5f8ff;
+	--text-body: #f5f8ff;
+	--text-highlight: #abaeb6;
+	--primary: #191c23;
+	--primary-1: #1f232b;
+	--primary-2: #22262f;
+	--primary-3: #252933;
+	--primary-4: #2b303b;
+	--accent: var(--text);
+	--card: var(--primary-3);
+}
+
+[data-theme='new-pink'] {
+	--background: #fffbea;
+	--text: #a74ca7;
+	--text-body: #642964;
+	--text-highlight: #8f3b8f;
+	--primary: #ffb7ef;
+	--primary-1: #ffc8ee;
+	--primary-2: #ffd1ee;
+	--primary-3: #ffd9ed;
+	--primary-4: #ffeaec;
+	--accent: var(--text);
+	--card: var(--primary-4);
+}
+
+[data-theme='ocean'] {
+	--background: #5684d7;
+	--text: #72efdd;
+	--text-body: #b1f1e9;
+	--text-highlight: #bbf8ef;
+	--primary: #5e60ce;
+	--primary-1: #5c69d1;
+	--primary-2: #5b6ed2;
+	--primary-3: #5a72d3;
+	--primary-4: #587bd5;
+	--accent: var(--text);
+	--card: var(--primary-2);
+}
+
+[data-theme='ice'] {
+	--background: #edf2fb;
+	--text: #5973b6;
+	--text-body: #41578d;
+	--text-highlight: #3f5385;
+	--primary: #b6ccfe;
+	--primary-1: #c1d3fe;
+	--primary-2: #ccdbfd;
+	--primary-3: #d7e3fc;
+	--primary-4: #e2eafc;
+	--shadow-color-primary: #889dcc;
+	--card: var(--primary-4);
+}
+
+[data-theme='testing'] {
+	--background: white;
+	--text: #3a606e;
+	--text-body: #3b4252;
+	--text-highlight: #275554;
+	--primary: #fed766;
+	--primary-1: #b7eec1;
+	--primary-2: #cff4d6;
+	--primary-3: #dbf7e1;
+	--primary-4: #e7faeb;
+	--shadow-color-primary: #7f9c75;
+	--accent: var(--text);
+	--card: var(--primary-4);
+
+	--test-0: #adbdff;
+	--test-1: #283044;
+	--test-2: #ff9b71;
+	--test-3: #9ee8ac;
+	--test-4: #fed766;
+	--test-5: #9984d4;
+	--test-6: #caa8f5;
+}
