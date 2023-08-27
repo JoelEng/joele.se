@@ -85,6 +85,9 @@
 		border: none;
 		border: 2px solid var(--toggle);
 		border-radius: 100px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
 	}
 
 	.slider button::before {
@@ -93,7 +96,6 @@
 		width: 1.4em;
 		height: 1.4em;
 		background: var(--toggle);
-		top: 0.2em;
 		right: 1.9em;
 		border-radius: 100px;
 		transition: all 0.3s;
@@ -104,7 +106,7 @@
 	}
 
 	.slider button[aria-checked='true']::before {
-		transform: translateX(1.6em);
+		transform: translateX(1.7em);
 		background: var(--switch-off);
 	}
 </style>
