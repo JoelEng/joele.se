@@ -1,5 +1,6 @@
 <script>
 	import Aftonbladet from '$lib/svg/timeline/Aftonbladet.svelte';
+	import Lth from '$lib/svg/timeline/Lth.svelte';
 	import Postnord from '$lib/svg/timeline/Postnord.svelte';
 	import School from '$lib/svg/timeline/School.svelte';
 	import Svt from '$lib/svg/timeline/Svt.svelte';
@@ -11,6 +12,17 @@
 </script>
 
 <div class="body" bind:clientWidth>
+	<TimelineItem bind:clientWidth side="left" title="Jan - Dec 2023">
+		<Lth slot="icon" />
+		<div class="content">
+			<h1>Research Assistant, LTH</h1>
+			<p>
+				University computer science reasearch is quite different from most other workplaces, and has
+				provided me other learning experiences than my previous work. I and my colleague have taken
+				significant responsibility over the decision-making and creation of a new research project.
+			</p>
+		</div>
+	</TimelineItem>
 	<TimelineItem bind:clientWidth side="right" title="Summer 2022">
 		<Aftonbladet slot="icon" />
 		<div class="content">

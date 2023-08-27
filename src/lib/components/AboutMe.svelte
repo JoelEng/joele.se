@@ -26,11 +26,13 @@
 		width: 100%;
 		max-width: 740px;
 		align-self: center;
+		transform: rotate(4deg);
 
 		@media (max-width: 900px) {
 			display: flex;
 			flex-direction: column;
 			padding: 1.4rem;
+			transform: rotate(0);
 		}
 	}
 
