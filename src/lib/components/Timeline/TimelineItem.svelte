@@ -2,6 +2,7 @@
 	export let side = 'full';
 	export let clientWidth = 0;
 	export let title = '';
+	export let show = true;
 
 	let lineWidth = 8;
 	let lineStyle = 'dashed';
@@ -41,7 +42,7 @@
 	}
 </script>
 
-<div class={`item ${side}`} style={borderStyle}>
+<div class={`item ${side}`} style={borderStyle} style:display={show ? 'flex' : 'none'}>
 	<div class={`bullet${side}`} style:transform={bulletTranslate}>
 		<slot name="icon" />
 	</div>
