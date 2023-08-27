@@ -10,13 +10,11 @@
 	import TimelineItem from './TimelineItem.svelte';
 
 	let clientWidth = 0;
-
-	let hide: boolean;
-	$: show = !hide;
+	let show = false;
 </script>
 
 <div class="container">
-	<Switch label="everything" label2="just the best bits" bind:checked={hide} />
+	<Switch label="just the best bits" label2="everything" bind:checked={show} />
 	<div class="body" bind:clientWidth>
 		<TimelineItem bind:clientWidth side="left" title="Jan - Dec 2023">
 			<Lth slot="icon" />
