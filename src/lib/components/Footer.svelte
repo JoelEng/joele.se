@@ -2,7 +2,7 @@
 	import ArrowUp from '$lib/svg/ArrowUp.svelte';
 	import NewWavesBottom from '$lib/svg/WavesBottom.svelte';
 	import Topography from '$lib/svg/Topography.svelte';
-	import { scrollTop } from 'svelte-scrolling';
+	import { scrollTop } from '$lib/functions/scrollTo';
 
 	let hovered = false;
 </script>
@@ -11,7 +11,7 @@
 	<Topography />
 	<NewWavesBottom />
 	<h1
-		on:click={() => scrollTop()}
+		on:click={scrollTop}
 		on:mouseover={() => (hovered = true)}
 		on:focus={() => (hovered = true)}
 		on:mouseout={() => (hovered = false)}

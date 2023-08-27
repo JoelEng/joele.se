@@ -4,7 +4,6 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Skills from '$lib/components/Skills/Skills.svelte';
 	import Timeline from '$lib/components/Timeline/Timeline.svelte';
-	import { scrollRef } from 'svelte-scrolling';
 	import AboutMe from '$lib/components/AboutMe.svelte';
 </script>
 
@@ -17,7 +16,7 @@
 	<ColorSwitch />
 
 	<div class="contentContainer">
-		<div class="content" use:scrollRef={'content'}>
+		<div class="content" id="content">
 			<AboutMe />
 
 			<h1>My School & Work Experience</h1>

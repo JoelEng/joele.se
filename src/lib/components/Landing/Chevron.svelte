@@ -4,7 +4,7 @@
 	import Mail from '$lib/svg/Mail.svelte';
 	import Chevron from '$lib/svg/Chevron.svelte';
 	import LayerButton from '../LayerButton.svelte';
-	import { scrollTo } from 'svelte-scrolling';
+	import { scrollTo } from '$lib/functions/scrollTo';
 </script>
 
 <div class="container">
@@ -28,7 +28,7 @@
 			<h1>View My Resume</h1>
 		</LayerButton>
 	</a>
-	<div use:scrollTo={{ ref: 'content', offset: -40 }} on:click={() => console.log('Test')}>
+	<div on:click={() => scrollTo('content', -20)}>
 		<Chevron />
 	</div>
 </div>
