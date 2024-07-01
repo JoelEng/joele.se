@@ -19,7 +19,7 @@
 		<div class="content" id="content">
 			<AboutMe />
 
-			<h1>My School & Work Experience</h1>
+			<h1>My Work & School Experience</h1>
 			<h2>What I've been up to all these years</h2>
 			<Timeline />
 

@@ -5,9 +5,11 @@
 	import School from '$lib/svg/timeline/School.svelte';
 	import Svt from '$lib/svg/timeline/Svt.svelte';
 	import Weknowit from '$lib/svg/timeline/Weknowit.svelte';
-	import LayerButton from '../LayerButton.svelte';
-	import Switch from '../Switch.svelte';
+	import LayerButton from '$lib/components/LayerButton.svelte';
+	import Switch from '$lib/components/Switch.svelte';
 	import TimelineItem from './TimelineItem.svelte';
+	import Thesis from '$lib/svg/timeline/Thesis.svelte';
+	import Tactel from '$lib/svg/timeline/Tactel.svelte';
 
 	let clientWidth = 0;
 	let show = false;
@@ -16,6 +18,23 @@
 <div class="container">
 	<Switch label="just the best bits" label2="everything" bind:checked={show} />
 	<div class="body" bind:clientWidth>
+		<TimelineItem bind:clientWidth side="right" title="Aug 2024 onwards">
+			<Tactel slot="icon" />
+			<div class="content">
+				<h1>Developer, Tactel AB</h1>
+				<p>I will soon begin work at Tactel AB, a subsidiary of Panasonic Aviations.</p>
+			</div>
+		</TimelineItem>
+		<TimelineItem bind:clientWidth side="left" title="Spring 2024">
+			<Thesis slot="icon" />
+			<div class="content">
+				<h1>Master's Thesis, Lund University</h1>
+				<p>
+					I recently wrote and published my Master's thesis at the Faculty of Engineering at Lund
+					University, in collaboration with Tactel AB.
+				</p>
+			</div>
+		</TimelineItem>
 		<TimelineItem bind:clientWidth side="left" title="Jan - Dec 2023">
 			<Lth slot="icon" />
 			<div class="content">
@@ -39,7 +58,7 @@
 				</p>
 			</div>
 		</TimelineItem>
-		<TimelineItem bind:clientWidth side="right" title="2021 - 2022">
+		<TimelineItem bind:clientWidth {show} side="right" title="2021 - 2022">
 			<Weknowit slot="icon" />
 			<div class="content">
 				<h1>Developer, We Know IT</h1>
@@ -52,16 +71,16 @@
 				</p>
 			</div>
 		</TimelineItem>
-		<TimelineItem bind:clientWidth side="left" title="2019 - current (2024)">
+		<TimelineItem bind:clientWidth side="left" title="2019 - 2024">
 			<School slot="icon" />
 			<div class="content" style:background="none">
 				<LayerButton offset="5px" borderRadius="inherit" background="var(--card)">
 					<h1>MSc in Computer Science, Lund University</h1>
 					<p>
-						I am currently in my fifth and final year on my way to a Master's, pursuing a degree in
-						Computer Science specializing in Software. As part of my broad education, I have learned
-						everything from functional programming with Haskell and multithreading with Java, to
-						advanced mathematics and creating a computer.
+						I have recently graduated, achieving a Master's degree in Computer Science specializing
+						in Software. As part of my broad education, I have learned everything from functional
+						programming with Haskell and multithreading with Java, to advanced mathematics and
+						creating a computer.
 					</p>
 				</LayerButton>
 			</div>
