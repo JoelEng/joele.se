@@ -21,8 +21,12 @@
 		<TimelineItem bind:clientWidth side="right" title="Aug 2024 onwards">
 			<Tactel slot="icon" />
 			<div class="content">
-				<h1>Developer, Tactel AB</h1>
-				<p>I will soon begin work at Tactel AB, a subsidiary of Panasonic Aviations.</p>
+				<h1>Full-Stack Developer, Tactel AB</h1>
+				<p>
+					At Tactel I have been involved in the development and planning of a wide range of projects,
+					from developing an API for external customers and creating a whole new application for evaluating that API
+					to developing new features in an OpenGL 3D application.
+				</p>
 			</div>
 		</TimelineItem>
 		<TimelineItem bind:clientWidth side="left" title="Spring 2024">
@@ -30,7 +34,7 @@
 			<div class="content">
 				<h1>Master's Thesis, Lund University</h1>
 				<p>
-					I recently wrote and published my Master's thesis at the Faculty of Engineering at Lund
+					I wrote and published my Master's thesis at the Faculty of Engineering at Lund
 					University, in collaboration with Tactel AB.
 				</p>
 			</div>
@@ -41,9 +45,9 @@
 				<h1>Research Assistant, Lund University</h1>
 				<p>
 					University computer science reasearch is quite different from most other workplaces, and
-					has provided me other learning experiences than my previous work. I and my colleague have
+					has provided me other learning experiences than my previous work. I have
 					taken significant responsibility over the decision-making and creation of a new research
-					project.
+					project examining AI and prompt engineering. This research project has since been published.
 				</p>
 			</div>
 		</TimelineItem>
@@ -65,9 +69,8 @@
 				<p>
 					As developer at a consulting company my work has consisted of various smaller tasks along
 					with some larger projects, all of which have broadened my understanding of React and
-					Wordpress. I have, for the first time, programmed in a work environment utilizing agile
-					development. My time with frontend development at WeKnowIT has complemented my previous
-					proficiency in backend development.
+					Wordpress. This is where I, for the first time, programmed in a work environment utilizing agile
+					development. This was also the first time I did frontend programming.
 				</p>
 			</div>
 		</TimelineItem>
@@ -77,8 +80,8 @@
 				<LayerButton offset="5px" borderRadius="inherit" background="var(--card)">
 					<h1>MSc in Computer Science, Lund University</h1>
 					<p>
-						I have recently graduated, achieving a Master's degree in Computer Science specializing
-						in Software. As part of my broad education, I have learned everything from functional
+						I have a Master's degree in Computer Science specializing
+						in Software. As part of my education, I have learned everything from functional
 						programming with Haskell and multithreading with Java, to advanced mathematics and
 						creating a computer.
 					</p>

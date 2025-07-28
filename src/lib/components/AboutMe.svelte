@@ -5,7 +5,7 @@
 	</div>
 	<h1>Who am I?</h1>
 	<p>
-		I am a computer science engineer currently studying in Lund. I have experience in many different
+		I am a computer science engineer currently working at Tactel AB in Malmö, Sweden. I have experience in many different
 		fields of computer science, from frontend to backend. Learning new things is what I'm best at,
 		and I'm always eager to become a better developer.
 	</p>

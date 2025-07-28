@@ -9,7 +9,7 @@
 		<Topography />
 		<div class="nameAndProfile">
 			<!-- <img src="/profile.png" alt="Me!" width={220} height={220} /> -->
-			<h1 class="text">Computer scientist <span style:white-space="nowrap">&& Developer</span></h1>
+			<h1 class="text">Computer scientist <span style:white-space="nowrap">&& Full-Stack Developer</span></h1>
 			<div class="fullname">
 				<h1 class="name">Joel</h1>
 				<h1 class="lastname">Engström</h1>
